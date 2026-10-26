@@ -4,14 +4,22 @@ Author: <Schuyler, Cole>
 Created: <10/22/2026>
 Instructor: Burgess
 """
+s=0
+av=0
+ne=0
+while True:
 
-total = 0
-number = 0
+    x=int(input("Enter a number"))
+    s += x
+    ne += 1
 
-x=input("Enter a number")
-total = total + int(x)
-number+= 1
+    print(f"Your current number entries are {ne}")
+    av = (s/ne)
+    print(f"Your current average is {av}")
 
 
-print("Your current number entries are {}")
-print("Your current averege is {}")
+    i = input("Do you want to enter another number? (y/n)")
+    if i == "y":
+        continue
+    else:
+        break
