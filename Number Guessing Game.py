@@ -12,13 +12,15 @@ import random
 num = random.randint(1,100)
 print(num)
 
+while True:
 
-guess=int(input("Ask the player to enter a number on each attempt "))
+ guess=int(input("Ask the player to enter a number on each attempt "))
 
 
-if guess > num:
+ if guess > num:
     print("Too high! Try again.")
-elif guess < num:
+ elif guess < num:
     print("Too low! Try again.")
-elif guess == num:
+ elif guess == num:
     print("Correct! You guessed the number!")
+    break
